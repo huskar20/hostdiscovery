@@ -7,6 +7,6 @@ For now usage is:
 
 newhostdiscovery.sh [Ip_address/Range Ip_address/Range] [email_address]
 
-sample usage: ./newhostdiscovery.sh "10.10.10.0/24 10.10.10.1/24" "example@sampleemail.com"
+sample usage: ./newhostdiscovery.sh "example@sampleemail.com" "10.10.10.0/24 10.10.10.1/24"
 
 Briefly, the script is using nmap scan to find out alive hosts....
