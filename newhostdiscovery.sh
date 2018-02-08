@@ -21,7 +21,7 @@ else
 fi
 #Starting host discovery through nmap scan
 echo "Host discovery started!"
-nmap -sP $1 | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' > $fileName
+nmap -sP $2 | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' > $fileName
 countOfIP=$(cat $fileName | wc -l)
 echo "Host discovery ended!"
 echo "New inventory   :$countOfIP"
@@ -34,7 +34,7 @@ grep -xvFf iplist $fileName > newhostsfound
 
 #Sending Email
 echo "Sending the email!"
-m_to="$2"
+m_to="$1"
 m_subject="New discovered hosts for $(date +%x)"
 if [ -s newhostsfound ]
 	then
