@@ -18,6 +18,7 @@ if [ -s iplist ]
 else
 	echo "This is the first discovery of IP addresses. All addresses will be written in $fileName file"
 	firstTime=1
+	touch $fileName
 fi
 #Starting host discovery through nmap scan
 echo "Host discovery started!"
