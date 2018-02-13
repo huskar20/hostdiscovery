@@ -52,6 +52,10 @@ echo "Email has been sent"
 
 #Delete temp file and update inventory.
 echo "Cleaning up the files"
-mv -f $fileName iplist
+if [ $firstTime -eq 0 ]
+	then
+	mv -f $fileName iplist
+fi
 rm newhostsfound
+
 echo " END OF SCRIPT  "
