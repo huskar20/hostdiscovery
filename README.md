@@ -5,7 +5,7 @@ A detailed usage description will be provided soon...
 
 For now usage is: 
 
-newhostdiscovery.sh [Ip_address/Range Ip_address/Range] [email_address]
+newhostdiscovery.sh [email_address] [Ip_address/Range Ip_address/Range] 
 
 sample usage: ./newhostdiscovery.sh "example@sampleemail.com" "10.10.10.0/24 10.10.10.1/24"
 
