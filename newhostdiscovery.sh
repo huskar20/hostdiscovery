@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#1th value: IP ranges
-#2nd value mail address to send
+#1th value : mail address to send
+#2nd value :IP ranges
 
 echo "....................."
 echo "Host Discovery Script"
